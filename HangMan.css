@@ -1,0 +1,86 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-weight: normal;
+  }
+  
+
+ body {
+  
+  margin : 0;
+  padding: 0;
+  background-image: url("Background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+
+    }
+h1,h3,h2{
+  text-align: center;
+
+  color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#btnGameStart, #btnResetGame, #Hint
+{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  margin: 3px;
+}
+.HangMan-grid {
+  justify-content: center;
+  align-items: center;
+ display: flex;
+ height: 350px;
+ flex-direction: column; 
+     
+ }
+.HangMan-grid > input {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px, solid #FFFFFF;
+  background-color: rbga(255, 255, 255, 0.75);
+    }
+
+#VirtualKey
+{
+  display: block;
+}
+.flex
+{
+    font-size: 15px;
+    border: 1px, solid #FFFFFF;
+    background-color: rbga(255, 255, 255, 0.75);
+    margin: 2px;
+    width : 40px;
+    height: 40px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.flex:hover
+{
+  background-color:cadetblue
+}
+.flex:visited
+{
+  background-color:#7ef3f1
+}
+.textarea
+{
+    border: 1px, solid #FFFFFF;
+    background-color:antiquewhite;
+    margin: 2px;
+    width : 472px;
+    height: 40px;
+    align-self: center;
+   
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:200px;
+  height:200px;
+}

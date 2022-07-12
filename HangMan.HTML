@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HangMan Game</title> 
+    <link href="HangMan.css" rel="stylesheet">
+  
+</head>
+<body>
+  <h1>Guess a secret word </h1>
+    <h3 id="guessCount" ></h3>
+  <div id="HangMan" class="HangMan-grid">
+    <textarea class="textarea" id="tbInput" cols="50">  </textarea>
+    <div id="VirtualKey">
+      <input id="btnA" class="flex" value="A" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnB" class="flex" value="B" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnC" class="flex" value="C" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnD" class="flex" value="D" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnE" class="flex" value="E" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnF" class="flex" value="F" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnG" class="flex" value="G" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnH" class="flex" value="H" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnI" class="flex" value="I" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnJ" class="flex" value="J" type="button" onclick="hangManGame.input(this)" />
+      <br> 
+      <input id="btnK" class="flex" value="K" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnL" class="flex" value="L" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnM" class="flex" value="M" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnN" class="flex" value="N" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnO" class="flex" value="O" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnP" class="flex" value="P" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnQ" class="flex" value="Q" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnR" class="flex" value="R" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnS" class="flex" value="S" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnT" class="flex" value="T" type="button" onclick="hangManGame.input(this)" />
+      <br> 
+      <input id="btnU" class="flex" value="U" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnV" class="flex" value="V" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnW" class="flex" value="W" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnX" class="flex" value="X" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnY" class="flex" value="Y" type="button" onclick="hangManGame.input(this);" />
+      <input id="btnZ" class="flex" value="Z" type="button" onclick="hangManGame.input(this);" />
+    </div>
+      <input id="btnGameStart" type="button" value="Start Game" onclick="hangManGame.getRandomValue()" />
+      <input id="btnResetGame" type="button" value="Reset Game" onclick="hangManGame.reset()" />
+      <input id="Hint" type="button" value="Hint" onclick="hangManGame.hint()" />
+      <script src="ServiceManager.Js"></script>
+      <script language="JavaScript" src="HangMan.Js" ></script>
+      <!-- <script src="https://random-word-api.herokuapp.com/word"></script> -->
+      <script src="https://random-words-api.vercel.app/word"></script>
+      <br>
+</div>
+<h2 id="secretWord"></h2>
+<br>
+<div id="gif" style="display:none ;">
+  <img src="HangMan.gif" alt="HangMan" class="center" /> 
+</div>
+
+</body>
+</html>
